@@ -1,0 +1,44 @@
+.btn {
+  --btn-bg-color: var(--text-color-primary);
+  --btn-color: var(--bg-color);
+  
+  font: var(--fw-md) var(--fs-base)/2.4rem var(--ff-inter);
+  color: var(--btn-color); 
+  background: var(--btn-bg-color);
+  border-radius: .8rem;
+  border: 0;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.btn:hover {
+  --btn-bg-color: linear-gradient(
+    90deg,
+    var(--brand-color-secondary) 0%,
+    var(--brand-color-primary) 100%
+    );
+  --btn-color: var(--surface-color);
+  
+  -webkit-background-clip: initial;
+  background-clip: initial;
+  color: var(--btn-color); 
+}
+
+.btn-sm {
+  font-size: var(--fs-sm);
+  padding: .8rem 1.6rem;
+}
+
+.btn-md {
+  font-size: var(--fs-base);
+  padding: 1.2rem 2.4rem;
+}
+
+.btn-lg {
+  font-size: 1.8rem;
+  padding: 1.6rem 3.2rem;
+}

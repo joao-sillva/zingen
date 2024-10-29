@@ -29,6 +29,26 @@
   gap: 1.6rem;
 }
 
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.gap-1\.6 {
+  gap: 1.6rem;
+}
+
+.gap-2\.4 {
+  gap: 2.4rem;
+}
+
 @media (width >= 80em) {
   .container {
     --max-width: 128rem;
