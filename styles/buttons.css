@@ -42,3 +42,37 @@
   font-size: 1.8rem;
   padding: 1.6rem 3.2rem;
 }
+
+.btn[aria-label] {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    border-radius: inherit;
+    inset: 1.6px;
+    background: var(--bg-color);
+  }
+
+  &::after {
+    content: attr(aria-label);
+    background: var(--btn-bg-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@media (width >= 80em) {
+  .btn-sm {
+    font-size: var(--fs-base);
+    padding: 1.2rem 2.4rem;
+  }
+  
+  .btn-md {
+    font-size: 1.8rem;
+    padding: 1.6rem 3.2rem;
+  }
+}
