@@ -1,0 +1,9 @@
+.card {
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 2.4rem;
+
+  & h3 {
+    margin-top: 1.6rem;
+  }
+}
