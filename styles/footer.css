@@ -1,0 +1,59 @@
+footer {
+  color: var(--text-color-secondary);
+  font-weight: var(--fw-md);
+
+  & .container {
+    padding-inline: 4.8rem;
+  }
+
+  & .container,
+  & .top {
+    gap: 4.8rem;
+  }
+
+  & nav.even-columns {
+    gap: 6.4rem;
+  }
+
+  & .top ul {
+    align-content: start;
+  }
+
+  & .title {
+    font-size: 1.2rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--brand-color-primary);
+  }
+
+  & .bottom {
+    flex-wrap: wrap;
+
+    & > div {
+      margin-right: auto;
+    }
+
+    & span {
+      font-size: 1.4rem;
+    }
+  }
+
+  @media (width >= 80em) {
+    .container {
+      padding-inline: 0;
+      padding-block: 3.2rem;
+    }
+
+    & .top {
+      grid-template-columns: auto 1fr;
+
+      & nav {
+        margin-left: auto;
+
+        & ul {
+          width: 22.4rem;
+        }
+      }
+    }
+  }
+}
