@@ -16,7 +16,7 @@
     margin-top: 3.2rem;
   }
 
-  @media (width >= 80em) {
+  @media (width >= 76em) {
     .card {
       padding: 14rem 8rem;
 

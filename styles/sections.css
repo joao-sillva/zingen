@@ -24,7 +24,7 @@
    }
  }
  
- @media (width >= 80em) {
+ @media (width >= 76em) {
   #smartphones-img {
     display: none;
   }
