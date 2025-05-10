@@ -43,12 +43,81 @@
     );
   }
 
+  & li {
+    background: url(../assets/icons/check.svg) no-repeat;
+    color: var(--text-color-secondary);
+    padding-left: 3.2rem;
+  }
+
+  & ul + small {
+    display: block;
+    margin-top: 2.4rem;
+    font-size: 1.4rem;
+    color: var(--text-color-secondary);
+  }
+
+  & .premium {
+    position: relative;
+
+    & .card {
+      padding-top: 6.8rem;
+
+      & > span {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        padding: 1.2rem 3.2rem;
+        background: linear-gradient(90deg,
+          var(--brand-color-secondary) 0%,
+          var(--brand-color-primary) 100%
+        );
+
+        border-top-left-radius: 2.4rem;
+        border-bottom-right-radius: 2.4rem;
+        
+        font: 600 var(--fs-sm) var(--ff-inter);
+        color: var(--bg-color);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+    }
+
+    padding: 2px;
+    &::before {
+      content: '';
+      background: linear-gradient(
+        90deg,
+        var(--brand-color-secondary) 0%,
+        var(--brand-color-primary) 100%
+      );
+      position: absolute;
+      inset: 0;
+      border-radius: 2.4rem;
+      z-index: -1;
+
+    }
+  }
+
   @media (width >= 80em) {
     --fs-price: 4rem;
   
     & header {
       max-width: 75rem;
       margin-inline: auto;
+    }
+
+    & .premium .card {
+      padding-bottom: 9.6rem;
+    }
+
+    & .btn-md {
+      font-size: var(--fs-base);
+      padding: 1.2rem 2.4rem;
+    }
+
+    & .card:nth-child(3) .separator {
+      margin-block: 2.4rem;
     }
   }
 }
