@@ -105,7 +105,7 @@ img {
   display: inline-block;
 }
 
-@media (width >= 76em) {
+@media (width >= 80em) {
   :root {
     --fs-lg: 3.2rem;
     --fs-xl: 4.8rem;
