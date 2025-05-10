@@ -1,0 +1,7 @@
+#about {
+  background: var(--surface-color);
+
+  & .even-columns {
+    gap: 3.2rem;
+  }
+}
