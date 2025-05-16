@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-Projeto de uma landing page para um aplicativo de karaokê desenvolvido durante as aulas sobre Responsividade na Rocketseat
+  Projeto de uma landing page para um aplicativo de karaokê desenvolvido durante as aulas sobre Responsividade na Rocketseat
 </p>
 
 <p align="center">
